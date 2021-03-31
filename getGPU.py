@@ -25,7 +25,7 @@ while(1):
     uglyPage = requests.get(favGPU,headers=headerDictionary)
     
     #transform ugly page to html page
-    page = bs(getPage.text, 'lxml')
+    page = bs(uglyPage.text, 'lxml')
     
     #get cart html. [blablabla] if not available, [] if available
     cart = page.select(disabledClass)
