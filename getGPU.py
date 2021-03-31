@@ -43,3 +43,6 @@ while(1):
         
         #reset count
         count = 0
+        
+    #sleep 1 second so you don't piss off Best Buy
+    sleep(1)
